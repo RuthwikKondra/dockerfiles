@@ -1,6 +1,6 @@
 ARG version
 FROM almalinux:${version:-8}
-ARG COURSE
-ARG TRAINER
+ARG COURSE=Docker
+ARG TRAINER=Ruthwik
 RUN echo "Course is : ${COURSE}, Trainer is : ${TRAINER}"
 CMD ["sleep", "60"]
